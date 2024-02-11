@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "WOV Gradient Background",
+    "version": "1.0.1",
+    "description": "Make wov prettier in game :>",
+    "icons": {
+        "128": "icon.png"
+    },
+    "author": "Iris",
+    "content_scripts": [
+        {
+            "matches": ["https://www.wolvesville.com/*"],
+            "js": ["main.js"]
+        }
+    ],
+    "host_permissions": ["https://www.wolvesville.com/*"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
